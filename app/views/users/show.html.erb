@@ -1,5 +1,10 @@
 <div class="row">
 	<div class="span6">
+		
+		<h3>
+			<%=link_to "Import #{@user.provider} contacts", "/contacts/gmail" if @user == current_user%>
+		</h3>	
+		
 		<p>
 			<b>Name:</b>
 			<%= @user.name %>
@@ -15,9 +20,11 @@
 			<%= @user.provider %>
 		</p>
 
+
+		
 		<p>
-			<%=link_to "Get #{@user.provider} contacts", "/contacts/gmail" if @user == current_user%>
-		</p>	
+			<%=link_to "Show #{@user.provider} contacts", user_contacts_path(@user) if @user == current_user%>
+		</p>
 			
 	</div>	
 	

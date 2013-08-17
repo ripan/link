@@ -1,6 +1,9 @@
 Link::Application.routes.draw do
-  
-  resources :users
+
+
+  resources :users do
+    resources :contacts
+  end
 
 
   resources :identities
@@ -60,7 +63,9 @@ Link::Application.routes.draw do
   match "/auth/failure", :to => "sessions#failure"
   match "/signout", :to => "sessions#destroy", :as => "signout"
   
-  get "/:provider/contacts" => "users#contacts"
+  match "/import", :to => "contacts#import_contacts", :as => "import_contacts"
+  
+  get "/:provider/contacts" => "contacts#import_contacts"
   get "/:provider/contacts/failure" => "users#failure"
   
   
