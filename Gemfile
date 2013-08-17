@@ -23,6 +23,14 @@ group :assets do
   gem "twitter-bootstrap-rails", :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 end
 
+group :development, :test do
+  gem "rspec-rails",        :git => "https://github.com/rspec/rspec-rails.git"
+  gem "rspec",              :git => "https://github.com/rspec/rspec.git"
+  gem "rspec-core",         :git => "https://github.com/rspec/rspec-core.git"
+  gem "rspec-expectations", :git => "https://github.com/rspec/rspec-expectations.git"
+  gem "rspec-mocks",        :git => "https://github.com/rspec/rspec-mocks.git"
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password

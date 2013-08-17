@@ -8,6 +8,47 @@ GIT
       rails (>= 3.1)
       railties (>= 3.1)
 
+GIT
+  remote: https://github.com/rspec/rspec-core.git
+  revision: d2857e2cce10f7560445c24e3faaed5f1fb6b2b7
+  specs:
+    rspec-core (3.0.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-expectations.git
+  revision: 4ccacb8a720aa671374bed0e225d20e6e092271f
+  specs:
+    rspec-expectations (3.0.0.pre)
+      diff-lcs (>= 1.1.3, < 2.0)
+
+GIT
+  remote: https://github.com/rspec/rspec-mocks.git
+  revision: 046dd46df2ff514cd0577c1e7da0a0ea327580fc
+  specs:
+    rspec-mocks (3.0.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-rails.git
+  revision: dd4408a9fa402e3537845c5813acfff28073b112
+  specs:
+    rspec-rails (3.0.0.pre)
+      actionpack (>= 3.0)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (= 3.0.0.pre)
+      rspec-expectations (= 3.0.0.pre)
+      rspec-mocks (= 3.0.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec.git
+  revision: f10bedd498dff2961d4be9cce793fa152c4a0bbe
+  specs:
+    rspec (3.0.0.pre)
+      rspec-core (= 3.0.0.pre)
+      rspec-expectations (= 3.0.0.pre)
+      rspec-mocks (= 3.0.0.pre)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -48,6 +89,7 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     commonjs (0.2.6)
+    diff-lcs (1.2.4)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -130,6 +172,11 @@ DEPENDENCIES
   less-rails
   mysql2
   rails (= 3.2.11)
+  rspec!
+  rspec-core!
+  rspec-expectations!
+  rspec-mocks!
+  rspec-rails!
   sass-rails (~> 3.2.3)
   therubyracer
   twitter-bootstrap-rails!
