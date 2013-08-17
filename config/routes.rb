@@ -1,4 +1,7 @@
 Link::Application.routes.draw do
+  
+  resources :identities
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

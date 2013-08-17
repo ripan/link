@@ -80,6 +80,7 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     arel (3.0.2)
+    bcrypt-ruby (3.0.1)
     builder (3.0.4)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -93,6 +94,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    hashie (2.0.5)
     hike (1.2.3)
     i18n (0.6.5)
     journey (1.0.4)
@@ -113,6 +115,20 @@ GEM
     mime-types (1.24)
     multi_json (1.7.9)
     mysql2 (0.3.13)
+    oauth (0.4.7)
+    omniauth (1.1.4)
+      hashie (>= 1.2, < 3)
+      rack
+    omniauth-google (1.0.2)
+      multi_json
+      omniauth (~> 1.0)
+      omniauth-oauth
+    omniauth-identity (1.1.0)
+      bcrypt-ruby (~> 3.0)
+      omniauth (~> 1.0)
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -171,6 +187,9 @@ DEPENDENCIES
   jquery-rails
   less-rails
   mysql2
+  omniauth
+  omniauth-google
+  omniauth-identity
   rails (= 3.2.11)
   rspec!
   rspec-core!
