@@ -12,10 +12,13 @@
 
 		<p>
 			<b>Provider:</b>
-			<%= @user.provider %> | <%=link_to "Get #{@user.provider} contacts", "/contacts/gmail"%>
+			<%= @user.provider %>
 		</p>
 
-		<%#=link_to "get contacts", :contacts_list%>		
+		<p>
+			<%=link_to "Get #{@user.provider} contacts", "/contacts/gmail" if @user == current_user%>
+		</p>	
+			
 	</div>	
 	
 	<div class="span6">
