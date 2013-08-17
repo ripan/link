@@ -1,21 +1,26 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+	<div class="span6">
+		<p>
+			<b>Name:</b>
+			<%= @user.name %>
+		</p>
 
-<p>
-  <b>Name:</b>
-  <%= @user.name %>
-</p>
+		<p>
+			<b>Email:</b>
+			<%= @user.email %>
+		</p>
 
-<p>
-  <b>Email:</b>
-  <%= @user.email %>
-</p>
+		<p>
+			<b>Provider:</b>
+			<%= @user.provider %> | <%=link_to "Get #{@user.provider} contacts", "/contacts/gmail"%>
+		</p>
 
-<p>
-  <b>Provider:</b>
-  <%= @user.provider %>
-</p>
+		<%#=link_to "get contacts", :contacts_list%>		
+	</div>	
+	
+	<div class="span6">
+		<%= render :partial => "contacts"%>
+	</div>
+	
+</div>	
 
-<p>
-  <b>Uid:</b>
-  <%= @user.uid %>
-</p>

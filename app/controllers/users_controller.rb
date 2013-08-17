@@ -12,4 +12,14 @@ class UsersController < ApplicationController
       format.json { render json: @user }
     end
   end
+  
+  def contacts
+    @user = current_user
+    @contacts = request.env['omnicontacts.contacts']
+    respond_to do |format|
+      flash[:notice] = "Gmail contacts successfully imported"
+      format.html {render :action => "show"}
+    end
+  end
+  
 end

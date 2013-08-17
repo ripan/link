@@ -36,6 +36,8 @@ gem 'jquery-rails'
 gem 'omniauth'
 gem 'omniauth-identity'
 gem 'omniauth-google'
+gem 'omnicontacts'
+gem 'certified'
 
 gem "showoff-io"
 gem "forward"

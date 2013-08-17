@@ -59,6 +59,12 @@ Link::Application.routes.draw do
   match "/auth/:provider/callback", :to =>  "sessions#create"
   match "/auth/failure", :to => "sessions#failure"
   match "/signout", :to => "sessions#destroy", :as => "signout"
+  
+  get "/:provider/contacts" => "users#contacts"
+  get "/:provider/contacts/failure" => "users#failure"
+  
+  
+  match "/contacts", :to => "users#contacts", :as => "contacts_list"
 
   # See how all your routes lay out with "rake routes"
 
