@@ -16,3 +16,9 @@ Set Hostname,Redirect URIs,Client id and Client secret in the following files
 
 /config/initializers/omniauth.rb
 /config/initializers/omnicontacts.rb
+
+
+Demo Link
+====
+
+http://thelink.herokuapp.com/
