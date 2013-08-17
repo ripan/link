@@ -3,27 +3,31 @@
 
 <hr>
 
+<%if @contacts.blank?%>
+<p>
+	No contacts found!. <br> Please <%=link_to "Import #{current_user.provider} contacts", "/contacts/gmail" %> first.
+</p>	
+<%else%>
 <div class="row">
 	<div class="span12">
 		<%= page_entries_info @contacts %>
 		<%= will_paginate @contacts, :class=>"pull-right"%>
 	</div>	
 </div>	
-
-
 <table class="table table-condensed">
-  <tr>
-    <th>Name</th>
-    <th>Email</th>
-  </tr>
-
-<% @contacts.each do |contact| %>
-  <tr>
-    <td><%= contact.name %></td>
-    <td><%= mail_to contact.email %></td>
-  </tr>
-<% end %>
+	<tr>
+		<th>Name</th>
+		<th>Email</th>
+	</tr>
+	<% @contacts.each do |contact| %>
+	<tr>
+		<td><%= contact.name %></td>
+		<td><%= mail_to contact.email %></td>
+	</tr>
+	<% end %>
 </table>
 <%= will_paginate @contacts, :class=>"pagination pagination-right"%>
+<%end%>
+
 
 
