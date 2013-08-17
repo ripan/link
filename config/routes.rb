@@ -1,5 +1,8 @@
 Link::Application.routes.draw do
   
+  resources :users
+
+
   resources :identities
   
   # The priority is based upon order of creation:
