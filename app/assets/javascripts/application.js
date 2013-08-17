@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+$(function(){
+	
+	$('.flash_messages').fadeOut(3000);
+
+}); //end function

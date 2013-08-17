@@ -11,3 +11,8 @@
  *= require_self
  *= require_tree .
  */
+
+.flash_container{
+	height:30px;
+	margin-bottom:10px;
+ }

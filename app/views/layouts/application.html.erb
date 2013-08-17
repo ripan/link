@@ -9,6 +9,12 @@
 <body>
 	<div class="container">
 		<div class="row">
+			<div class="span6 offset3 flash_container">
+				<div class="flash_messages"><center><%= render :partial => "shared/flash_messages" %></center></div>
+			</div>
+		</div>
+	
+		<div class="row">
 			<div class="span12">
 				<%= yield %>
 			</div>
