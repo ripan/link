@@ -1,4 +1,8 @@
 class User < ActiveRecord::Base
+  
+  extend FriendlyId
+  friendly_id :name, :use => :history
+  
   attr_accessible :email, :name, :provider, :uid
   
   def self.from_omniauth(auth)

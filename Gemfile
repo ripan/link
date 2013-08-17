@@ -41,6 +41,7 @@ gem 'certified'
 
 gem "showoff-io"
 gem "forward"
+gem 'friendly_id'
 
 
 # To use ActiveModel has_secure_password

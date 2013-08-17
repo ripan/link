@@ -96,6 +96,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     forward (0.0.1)
+    friendly_id (4.0.9)
     hashie (2.0.5)
     hike (1.2.3)
     i18n (0.6.5)
@@ -192,6 +193,7 @@ DEPENDENCIES
   certified
   coffee-rails (~> 3.2.1)
   forward
+  friendly_id
   jquery-rails
   less-rails
   mysql2
